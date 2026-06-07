@@ -1,0 +1,84 @@
+/* reset.css
+   Baseado no "modern CSS reset" de Andy Bell
+   Versão adaptada — remove estilos padrão e fornece bases úteis
+*/
+
+/* Box-sizing e remoção de margens padrões */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Altura total para facilitar layouts full-height */
+html, body {
+  height: 100%;
+}
+
+/* Melhora tipografia e suaviza fontes em dispositivos WebKit */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remover estilos de listas quando tiver classe */
+ul[class], ol[class] {
+  list-style: none;
+}
+
+/* Links sem classe: manter comportamento padrão amigável */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Tornar imagens e mídias responsivas */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inputs e botões herdam fonte */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Remover aparências nativas de botões em alguns navegadores */
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* Remover foco indesejado em elementos que não precisam */
+:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* Preferência por reduzir movimento */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Melhor padrão para elementos de formulário */
+textarea {
+  resize: vertical;
+}
+
+/* Remover ícones de search em alguns navegadores */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+/* Forçar renderização legível em quebras de palavra */
+body, p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
