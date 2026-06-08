@@ -32,6 +32,14 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
 /* Tornar imagens e mídias responsivas */
 img, picture, video, canvas, svg {
   display: block;

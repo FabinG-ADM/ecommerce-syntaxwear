@@ -10,26 +10,58 @@
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/layout.css" />
 
+    <link rel="stylesheet" href="./css/componentes/header.css" />
+    
 </head>
 <body>
     <header class="site-header">
-        <div class="container header-inner">
-            <a href="/" class="logo" aria-label="SyntaxWear"></a>
-            <nav class="site-nav" role="navigation" aria-label="Navegação principal">
-                <ul class="nav-list"></ul>
-            </nav>
-        </div>
+        <h1 class="logo">
+            <a href="/" title="SyntaxWear - Tênis e Sneakers Online">
+                <img src="./images/logo/logo.svg" alt="SyntaxWear - Tênis e Sneakers Online">
+            </a>
+        </h1>
+
+        <nav class="nav-center" aria-label="Categorias Principais">
+            <ul>
+                <li><a href="#">Masculino</a></li>
+                <li><a href="#">Feminino</a></li>
+                <li><a href="#">Outlet</a></li>
+            </ul>
+        </nav>
+        
+        <nav class="nav-right" aria-label="Menu superior">
+            <ul>
+                <li><a href="#">Nossas lojas</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li>
+                    <a href="#" aria-label="Minha conta">
+                        <img src="./images/icons/user.svg" alt="Minha Conta" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Ajuda">
+                        <img src="./images/icons/help.svg" alt="Ajuda" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Carrinho">
+                        <img src="./images/icons/bag.svg" alt="Carrinho" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
     </header>
 
-    <main id="main">
-        <section class="hero" aria-label="Seção hero"></section>
+    <main>
+        <section class="hero" aria-label="Seção hero">     </section>
 
         <section class="categories" aria-label="Categorias de tênis"></section>
 
         <section class="products-grid" aria-label="Produtos em destaque"></section>
     </main>
 
-    <footer class="site-footer">
+    <footer>
         <div class="container footer-inner">
             <div class="contact" aria-label="Informações de contato"></div>
             <div class="footer-links" aria-label="Links do rodapé"></div>
