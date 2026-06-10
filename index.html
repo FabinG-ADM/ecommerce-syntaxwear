@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SyntaxWear - E-commerce</title>
-    <meta name="description" content="SyntaxWear é a sua loja online de tênis e sneakers. Encontre os melhores modelos para homens e mulheres, com ofertas exclusivas e frete grátis. Compre agora e transforme seu estilo!">
+    <meta name="description"
+        content="SyntaxWear é a sua loja online de tênis e sneakers. Encontre os melhores modelos para homens e mulheres, com ofertas exclusivas e frete grátis. Compre agora e transforme seu estilo!">
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/variables.css">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="./css/componentes/hero.css" />
     <link rel="stylesheet" href="./css/componentes/product-category.css" />
     <link rel="stylesheet" href="./css/componentes/product-grid.css" />
+    <link rel="stylesheet" href="./css/componentes/footer.css" />
 
 
 </head>
@@ -128,12 +130,85 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container footer-inner">
-            <div class="contact" aria-label="Informações de contato"></div>
-            <div class="footer-links" aria-label="Links do rodapé"></div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-right">
+                <form class="newsletter-form">
+                    <label for="newsletter-email" class="sr-only">Inscreva-se em nosso e-mail:</label>
+                    <input id="newsletter-email" type="email" placeholder="email@email.com" />
+                </form>
+
+                <div class="footer-social">
+                    <span>Redes sociais</span>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./images/icons/instagram.svg" alt="Instagram" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/icons/whatsapp.svg" alt="WhatsApp" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/icons/tiktok.svg" alt="TikTok" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/icons/facebook.svg" alt="Facebook" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="footer-nav" id="footer">
+                <ul>
+                    <li class="footer-item">
+                        <span>Masculino</span>
+                        <ul>
+                            <li><a href="#">Casual</a></li>
+                            <li><a href="#">Esporte</a></li>
+                            <li><a href="#">Moderno</a></li>
+                            <li><a href="#">Futurista</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer-item">
+                        <span>Feminino</span>
+                        <ul>
+                            <li><a href="#">Casual</a></li>
+                            <li><a href="#">Esporte</a></li>
+                            <li><a href="#">Moderno</a></li>
+                            <li><a href="#">Futurista</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-item">
+                        <span>Outlet</span>
+                        <ul>
+                            <li><a href="#">Masculino</a></li>
+                            <li><a href="#">Feminino</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer-item">
+                        <span>Nossas lojas</span>
+                        <ul>
+                            <li><a href="#">Loja física</a></li>
+                            <li><a href="#">Loja online</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="footer-item">
+                        <span>Sobre</span>
+                        <ul>
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#">Missão</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-copy">
+            <p>Copyright. All Rights Reserved</p>
         </div>
     </footer>
+
 </body>
 
 </html>
