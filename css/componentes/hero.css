@@ -2,7 +2,7 @@
     background: url(../../images/banners/hero.jpg) no-repeat center;
     background-size: cover;
 
-    height: 600px;
+    height: 500px;
     position: relative;
     border-radius: 20px;
 }
@@ -42,7 +42,6 @@
 
 @media (max-width: 768px) {
     .hero-section {
-        height: 660px;
         background-image: url(../../images/banners/hero-mobile.png);
     }
 

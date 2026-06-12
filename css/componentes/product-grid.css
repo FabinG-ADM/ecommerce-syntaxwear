@@ -78,7 +78,7 @@
 @media (max-width: 768px) {
     .grid-section {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-areas:
             "highlight highlight"
             "sneaker-white sneaker-white"
@@ -101,3 +101,4 @@
         min-height: 190px;
     }
 }
+
