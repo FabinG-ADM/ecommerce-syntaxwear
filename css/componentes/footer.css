@@ -19,23 +19,21 @@
 
 .footer-nav ul {
     display: flex;
-    padding: 0;
-    gap: 2.5rem;
+    gap: 1.25rem;
 }
 
 .footer-nav ul ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 0;
 }
 
-.footer-nav span {
+.footer-nav strong {
     color: #EDEDED;
     font-size: 1.25rem;
     margin-bottom: 1rem;
     display: block;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .footer-nav li a {
@@ -54,8 +52,8 @@
 .newsletter-form input {
     border-radius: 30px;
     color:#AAAAAA;
-    padding: 0.625rem 1.25rem;
-    width: 344px;
+    padding: 0.75rem 1.25rem;
+    width: 21.5rem;
 }
 
 .footer-social span {
@@ -68,12 +66,6 @@
     gap: 1.25rem;
 }
 
-.footer-social li {
-    border: 2px solid #ffffff;
-    border-radius: 100%;
-    padding: 0.3125rem;
-}
-
 .footer-social li a:hover img {
     opacity: 0.7;
 }
@@ -81,5 +73,27 @@
 .footer-copy {
     font-size: 1.25rem;
     text-align: center;
-    padding: 1.25rem 0;
+    padding: 20px 0;
+}
+
+@media (max-width: 1000px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-social ul {
+        gap: 1rem;
+    }
+
+    .footer-copy {
+        font-size: 1rem;
+        padding: 1.5rem 0 1.5rem;
+    }
 }
